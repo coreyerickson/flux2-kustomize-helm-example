@@ -11,8 +11,6 @@ spec:
     enable: false
   values:
     ingress:
-      spec:
-        ingressClassName: external-nginx
       hosts:
         - host: podinfo.staging
           paths:
