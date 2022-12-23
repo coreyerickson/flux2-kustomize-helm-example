@@ -4,7 +4,7 @@ metadata:
   name: ext-core
   namespace: ext-core
 spec:
-  releaseName: podinfo
+  releaseName: ext-core 
   chart:
     spec:
       chart: podinfo
