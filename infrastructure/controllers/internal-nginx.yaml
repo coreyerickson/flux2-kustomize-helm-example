@@ -41,7 +41,7 @@ spec:
         enabled: true
       service:
          annotations:
-           meta.helm.sh/release-name: "ingress-nginx"
+           meta.helm.sh/release-name: "internal-nginx"
            prometheus.io/scrape: "true"
            prometheus.io/port: "10254"
     admissionWebhooks:
