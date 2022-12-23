@@ -2,7 +2,7 @@ apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
   name: podinfo
-  namespace: ext-podinfo
+  namespace: ext-core
 spec:
   interval: 5m
   url: https://stefanprodan.github.io/podinfo
