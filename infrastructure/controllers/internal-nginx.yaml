@@ -28,7 +28,7 @@ spec:
       version: "*"
       sourceRef:
         kind: HelmRepository
-        name: internal-nginx
+        name: ingress-nginx
         namespace: internal-nginx
       interval: 12h
   values:
