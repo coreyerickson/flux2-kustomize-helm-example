@@ -13,9 +13,9 @@ spec:
     ingress:
       spec:
        tls:
-       - hosts:
-          - "*.lab.corebits.ca"
-          secretName: ingress
+         - hosts:
+           - "*.lab.corebits.ca"
+      secretName: ingress
       hosts:
         - host: lab.corebits.ca 
           paths:
