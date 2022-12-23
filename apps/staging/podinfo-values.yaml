@@ -12,7 +12,7 @@ spec:
   values:
     ingress:
       spec:
-       tls:
+        tls:
          - hosts:
            - "*.lab.corebits.ca"
       secretName: ingress
