@@ -11,10 +11,9 @@ spec:
     enable: false
   values:
     ingress:
-      spec:
-        tls:
-         - hosts:
-           - "*.lab.corebits.ca"
+      tls:
+       - hosts:
+         - "*.lab.corebits.ca"
       secretName: ingress
       hosts:
         - host: lab.corebits.ca 
