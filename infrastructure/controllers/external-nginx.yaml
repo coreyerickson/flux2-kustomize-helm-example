@@ -9,7 +9,7 @@ metadata:
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
-  name: external-nginx
+  name: ingress-nginx
   namespace: external-nginx
 spec:
   interval: 24h
@@ -18,7 +18,7 @@ spec:
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: ingress-nginx
+  name: external-nginx
   namespace: external-nginx
 spec:
   interval: 30m
