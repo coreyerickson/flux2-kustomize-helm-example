@@ -3,6 +3,7 @@ kind: Kustomization
 namespace: podinfo
 resources:
   - ../base/podinfo
+  - ../base/core
 patchesStrategicMerge:
   - podinfo-values.yaml
-  - ext-podinfo-values.yaml
+  - ext-core.yaml
