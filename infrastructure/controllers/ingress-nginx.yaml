@@ -43,5 +43,6 @@ spec:
          annotations:
            prometheus.io/scrape: "true"
            prometheus.io/port: "10254"
+           meta.helm.sh/release-name: "ingress-nginx"
     admissionWebhooks:
       enabled: false
