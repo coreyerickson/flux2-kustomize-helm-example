@@ -34,6 +34,12 @@ spec:
   values:
     installCRDs: true
     controller:
+      electionID: ingress-controller-internal
+      ingressClassResource:
+        name: internal-nginx  # default: nginx
+        enabled: true
+        default: true
+        controllerValue: "k8s.io/intenal-nginx"  # default: k8s.io/ingress-nginx
       podAnnotations:
          prometheus.io/scrape: "true"
          prometheus.io/port: "10254"
@@ -41,7 +47,6 @@ spec:
         enabled: true
       service:
          annotations:
-           meta.helm.sh/release-name: "internal-nginx"
            prometheus.io/scrape: "true"
            prometheus.io/port: "10254"
     admissionWebhooks:

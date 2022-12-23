@@ -34,6 +34,12 @@ spec:
   values:
     installCRDs: true
     controller:
+      electionID: ingress-controller-external
+      ingressClassResource:
+        name: ingress-nginx  # default: nginx
+        enabled: true
+        default: false
+        controllerValue: "k8s.io/ingress-nginx"  # default: k8s.io/ingress-nginx 
       podAnnotations:
          prometheus.io/scrape: "true"
          prometheus.io/port: "10254"
@@ -43,6 +49,5 @@ spec:
          annotations:
            prometheus.io/scrape: "true"
            prometheus.io/port: "10254"
-           meta.helm.sh/release-name: "ingress-nginx"
     admissionWebhooks:
       enabled: false
